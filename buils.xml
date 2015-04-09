@@ -1,0 +1,43 @@
+<project name="Dutil" default="dist" basedir=".">
+    <description>
+        build file
+    </description>
+	<!-- set global properties for this build -->
+	<property name="srcjsp" location="ksup/jsp"/>
+	<property name="srcconf" location="ksup/properties"/>
+	<property name="srcrsc" location="ksup/resources"/>
+	<property name="app" location="/apps/ksup"/>
+	<property name="tomcat_home" location="/apps/tomcat"/>
+	<property name="tomcat_bin" location="${tomcat_home}/bin"/>
+	<property name="tomcat_stop" location="${tomcat_bin}/shutdown.sh"/> 
+	<property name="tomcat_start" location="${tomcat_bin}/startup.sh"/> 
+	
+	<target name="copy"
+	      description="copy files into app folder " >
+	 <copy todir="${app}/jsp" overwrite="true">
+	   <fileset dir="${srcjsp}"/>
+	 </copy>
+	 <copy todir="${app}/WEB-INF/classes" overwrite="true">
+	  	<fileset dir="${srcconf}"/>
+	 </copy>
+	 <copy todir="${app}" overwrite="true">
+	  	<fileset dir="${srcrsc}"/>
+		  </copy>
+	</target>
+  
+	<target name="tomcatrestart" depends="tomcatstop,tomcatstart">
+    	<echo>Tomcat restart!</echo>
+    </target>
+
+	<target name="tomcatstart" >
+    	<echo>Tomcat start!</echo>
+		<exec executable="${tomcat_start}">
+		</exec>
+    </target>
+	<target name="tomcatstop">
+    	<echo>Tomcat stop!</echo>
+		<exec executable="${tomcat_stop}">
+		</exec>
+    </target>
+
+</project>

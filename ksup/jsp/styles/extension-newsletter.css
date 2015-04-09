@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/open-sans/regular/OpenSans-Regular.eot);
+  src: url(fonts/open-sans/regular/OpenSans-Regular.eot?#iefix) format("embedded-opentype"), url(fonts/open-sans/regular/OpenSans-Regular.woff) format("woff"), url(fonts/open-sans/regular/OpenSans-Regular.ttf) format("truetype"), url(fonts/open-sans/regular/OpenSans-Regular.svg#open_sansregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/open-sans/bold/OpenSans-Bold.eot);
+  src: url(fonts/open-sans/bold/OpenSans-Bold.eot?#iefix) format("embedded-opentype"), url(fonts/open-sans/bold/OpenSans-Bold.woff) format("woff"), url(fonts/open-sans/bold/OpenSans-Bold.ttf) format("truetype"), url(fonts/open-sans/bold/OpenSans-Bold.svg#open_sansbold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #eee;
+  color: #000;
+  font-family: Cambria, georgia, times, "times new roman", serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+a {
+  color: #2869a9;
+}
+
+address {
+  border-bottom: 2px solid #333;
+  border-top: 2px solid #333;
+  font-style: normal;
+  padding: .5em;
+  line-height: 1.5em;
+  font-family: arial, helvetica, sans-serif;
+  font-size: .88889em;
+  margin: 0 0 1.5em;
+}
+
+ul {
+  margin: 0 0 1.5em;
+}
+ul li {
+  list-style: disc outside url(img/puce.svg);
+}
+ul ul li {
+  list-style: disc outside url(img/puce2.svg);
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  font-family: Cambria, georgia, times, "times new roman", serif;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+}
+
+caption {
+  border-bottom: 2px solid;
+}
+
+.ligne-colonne {
+  border: 0;
+  border-style: hidden;
+}
+
+#bandeau,
+#bandeau-bas {
+  text-align: center;
+  background: #000;
+}
+
+#contenu {
+  background-color: #fff;
+  width: 780px;
+  margin: 0 auto;
+}
+
+#logo {
+  left: auto;
+  position: relative;
+  top: auto;
+}
+
+#numero-date {
+  text-align: right;
+  margin: 0;
+  background: #333;
+  color: #fff;
+  font-family: verdana, arial, sans-serif;
+  font-size: .72222em;
+}
+#numero-date p {
+  margin: 0 auto;
+}
+
+#fichiers_joints {
+  border-top: 2px solid #ccc;
+  margin: 1em 10px;
+  padding: 1em 0 0;
+}
+#fichiers_joints h2 {
+  text-transform: uppercase;
+}
+
+#pied_page {
+  background-color: #333;
+  color: #fff;
+  font-family: Cambria, georgia, times, "times new roman", serif;
+  font-size: .88889em;
+  line-height: normal;
+}
+#pied_page a {
+  color: #fff;
+}
+#pied_page > div {
+  margin: 0 auto;
+}
+
+.style-0 {
+  margin: 0 0 1.5em;
+}
+
+.style-1 {
+  margin: 0 0 1.5em;
+}
+.style-1 h2 {
+  margin: 0 0 .4em;
+}
+
+.style-2 {
+  background-color: #F1ECE8;
+  margin: 0 0 1.5em;
+  padding: 1em;
+}
+.style-2 h2 {
+  margin: 0 0 .4em;
+}
+
+.style-3 {
+  margin: 0 0 1.5em;
+}
+.style-3 h2 {
+  background-color: #F1ECE8;
+  padding: .5em;
+}
+
+.liste-fiche {
+  border: 0;
+}
+.liste-fiche td {
+  border-bottom: 1px solid #999;
+  padding: .5em 0;
+}
+
+.liste-fiche--vignette {
+  margin: 0 .5em .5em 0;
+}
+
+.liste-fiche--titre {
+  text-decoration: none;
+}
+.liste-fiche--titre a {
+  text-decoration: none;
+  line-height: normal;
+}
+
+.liste-fiche--date {
+  margin: 0;
+  font-size: .72222em;
+  font-family: verdana, sans-serif;
+}
+
+.liste-fiche--resume {
+  margin: 0;
+}

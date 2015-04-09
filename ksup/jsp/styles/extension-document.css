@@ -1,0 +1,7 @@
+.document .thematiques {
+  margin: 0 0 .75em;
+  padding: 0;
+}
+.document .thematiques > * {
+  display: inline;
+}

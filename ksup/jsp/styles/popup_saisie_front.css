@@ -1,0 +1,19 @@
+body {
+  background: #fff;
+}
+
+.titrepage {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 15px 0 0;
+  padding: 0;
+}
+
+.bouton {
+  background: #fff;
+  border: 1px solid #333;
+  color: #5c46a0;
+  font-size: xx-small;
+  margin: 0 0 1px;
+  padding: 3px 2px;
+}

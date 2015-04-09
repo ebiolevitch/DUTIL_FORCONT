@@ -1,0 +1,28 @@
+/* Feuille de styles personnalisable pour les intégrations */
+header {
+background-image: url(img/body_multisites.jpg);
+background-repeat: no-repeat;
+
+}
+footer {
+background-image: url(img/body_multisites.jpg);
+background-repeat: no-repeat;
+
+}
+
+#menu_secondaire {
+background-color: #2F5597;
+color: white;
+}
+
+#menu_secondaire li a{
+color: white;
+}
+
+.encadre_rubrique{
+background-color: #2F5597;
+}
+
+.encadre_rubrique h3{
+color: white;
+}
