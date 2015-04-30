@@ -65,15 +65,15 @@ if (StringUtils.isNotBlank(specificInclude)) {
 	%><%= specificInclude %><%
 }
 
-	/* Quelques liens de navigation standards, utilisés en particulier dans Mozilla/FireFox/... */ %>
+	/* Quelques liens de navigation standards, utilisÃ©s en particulier dans Mozilla/FireFox/... */ %>
    <link rel="start" title="Accueil" href="<%=URLResolver.getAbsoluteUrl("/", ctx)%>" />
 
-    <% /* Flux RSS de K-Portal : les 10 dernières actualités du site courant */%>
+    <% /* Flux RSS de K-Portal : les 10 derniÃ¨res actualitÃ©s du site courant */%>
     <link rel="alternate" type="application/rss+xml" title="<%=MessageHelper.getCoreMessage("ST_DIX_DERNIERES_ACTUALITES")%>" href="<%=URLResolver.getAbsoluteUrl("/adminsite/webservices/export_rss.jsp?NOMBRE=10&amp;CODE_RUBRIQUE=" + ctx.getInfosSite().getCodeRubrique() + "&amp;LANGUE=" + ctx.getLangue(), ctx)%>" />
 </head>
 <% 
-/* On est ici en mesure de savoir s'il y a des encadrés ou pas, et une zone de navigation ou pas :
-on décide donc de la classe qui s'applique sur le centre de la page, qui gère la largeur de la zone centrale */
+/* On est ici en mesure de savoir s'il y a des encadrÃ©s ou pas, et une zone de navigation ou pas :
+on dÃ©cide donc de la classe qui s'applique sur le centre de la page, qui gÃ¨re la largeur de la zone centrale */
 String idCentre = "contenu_sans_nav_sans_encadres";
 if (frontOfficeBean.isEncadrePresent() && frontOfficeBean.isNavigationSecondairePresente()) {
 	idCentre = "avec_nav_avec_encadres";
@@ -82,7 +82,7 @@ if (frontOfficeBean.isEncadrePresent() && frontOfficeBean.isNavigationSecondaire
 } else if (frontOfficeBean.isNavigationSecondairePresente()) {
 	idCentre = "avec_nav_sans_encadres";
 }
-/* Gestion des classes appliquées au body (aka body-switching) */
+/* Gestion des classes appliquÃ©es au body (aka body-switching) */
 String classBody = StringUtils.EMPTY;
 if (frontOfficeBean.isCollaboratif()) {
 	classBody = "collaboratif ";
@@ -117,41 +117,36 @@ if (frontOfficeBean.isApercu()) {
 }
 %>
 <header>
-	<div id="bandeau_outils">
-		<div>
-			<p id="acces_direct">
-			  <a href="#<%=idCentre%>"><%=MessageHelper.getCoreMessage("ST_ACCES_DIRECT_CONTENU")%></a> |
-			  <a href="#menu_principal"><%=MessageHelper.getCoreMessage("ACCES_DIRECT_NAVIGATION")%></a> |
-			  <a href="#acces-directs"><%=MessageHelper.getCoreMessage("ACCES_DIRECTS")%></a>  |
-			  <a href="#connexion"><%=MessageHelper.getCoreMessage("ACCES_DIRECTS_CONNEXION")%></a>
-			</p>				 		
+	<div id="bandeau2">
+			        <script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&ELEMENT=recherche&RUBRIQUE=ENS"></script>
+ <script type="text/javascript"  style="display:none">
 	
-			<a href="#" class="logo-mobile">
-		        <img src="/jsp/styles/img/logo.png" title="Accueil" alt="Accueil" />
-		    </a> 				
-			
-			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/menu_versions.jsp\" %>"/>
-			
-			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/recherche_simple.jsp\" %>" />
-		</div><!-- -->
-	</div> <!-- #bandeau_outils -->
-	
-	
-	<div class="cartouche">
-		<div>
 			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/banniere.jsp\" %>" />
-			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/reseaux_sociaux.jsp\" %>" />
-		</div><!-- / -->
-	</div><!-- .cartouche -->
+		<div id="profils">
+		<strong>Accès par profil&nbsp;: </strong>
+		<ul>
+		<li><a href="http://www.univ-nantes.fr/05905336/0/fiche___pagelibre/">Entreprise</a></li>
+		<li><a href="http://www.univ-nantes.fr/59193101/0/fiche___pagelibre/">Lycéen</a></li>
+		<li><a href="http://www.univ-nantes.fr/45032473/0/fiche___pagelibre/">Etudiant étranger</a></li>
+		<li><a href="http://www.univ-nantes.fr/1325759101442/0/fiche___pagelibre/">En reprise d'étude</a></li>
+		<li><a href="http://www.univ-nantes.fr/55885317/0/fiche___pagelibre/">Ancien étudiant</a></li>
+		</ul></div>
 	
-	<div id="menu" role="navigation" class="plier-deplier__contenu plier-deplier__contenu--relatif plier-deplier__contenu--clos" aria-expanded="false">
-	   <jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/menu_principal/menu_simple.jsp\" %>" />
-	   <div class="separateur"></div>
-	</div> <!-- #menu -->
+	</div> <!-- #bandeau2 -->
+	
+	<div id="menu" role="navigation">
+     		    Polytech Nantes, École d'ingénieurs
+	</div>
+	<!-- #menu-->
+<!-- 	<div id="menu" role="navigation" class="plier-deplier__contenu plier-deplier__contenu--relatif plier-deplier__contenu--clos" aria-expanded="false"> -->
+<!-- 	ici est présent l'inclusion de la jsp menu_simple  -->
+<!-- 	   <div class="separateur"></div> -->
+<!-- 	</div> <!-- #menu -->
 </header>
 
 <main id="page">
 	<div id="page_deco">	
+	<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/fil_ariane.jsp\"%>" />
 	<div id="contenu-encadres"><%
 	if (!frontOfficeBean.isAccueilSite()) {
 		if(StringUtils.isNotBlank(frontOfficeBean.getVisuelRubrique())) {
@@ -161,7 +156,7 @@ if (frontOfficeBean.isApercu()) {
 	%><div id="<%=idCentre%>" class="contenu" role="main"><%
 	if (!frontOfficeBean.isAccueilSite()) {
 	%>
-		<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/fil_ariane.jsp\"%>" />
+		
 		<%
 		if (StringUtils.isNotBlank(surtitre)) {
 			%><%=surtitre%><%

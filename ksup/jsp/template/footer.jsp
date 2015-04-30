@@ -22,6 +22,8 @@ JSPIncludeHelper.includePluginFicheTemplates(out, getServletContext(), request, 
 		<% if (frontOfficeBean.isNavigationSecondairePresente()) { %>
 			<div id="navigation" role="navigation">
 				<h2><%=MessageHelper.getCoreMessage("DANS_LA_MEME_RUBRIQUE")%></h2>
+				<a href="http://www.polytech.univ-nantes.fr/"><img alt="logo rubrique" src="../../fc/jsp/styles/img/polytech.jpg"></img></a>
+				<br></br>
 				<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/menu_secondaire.jsp\" %>" />
 			</div><!-- #navigation -->
 		<% } %>
@@ -30,16 +32,6 @@ JSPIncludeHelper.includePluginFicheTemplates(out, getServletContext(), request, 
 				<div class="separateur"></div>
 			</main> <!-- #page -->
 			
-			<div id="pied_outils">
-				<div>
-					<button id="menu-principal-bouton" class="plier-deplier__bouton" aria-expanded="false">
-						<span class="icon icon-menu2"></span>
-						<span class="icon-libelle"><%=MessageHelper.getCoreMessage("ST_ACCES_DIRECT_MENU")%></span>
-					</button>
-					<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/acces_directs.jsp\" %>" />
-                    <jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/menu_intranet.jsp\" %>" />
-				</div><!-- / -->
-			</div><!-- #pied_outils -->
 				
 			<footer id="pied_deco">
 				<div id="pied_page" role="contentinfo">
