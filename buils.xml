@@ -22,7 +22,7 @@
 	 </copy>
 	 <copy todir="${app}" overwrite="true">
 	  	<fileset dir="${srcrsc}"/>
-		  </copy>
+	</copy>
 	</target>
   
 	<target name="tomcatrestart" depends="tomcatstop,tomcatstart">

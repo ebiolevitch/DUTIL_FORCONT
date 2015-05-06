@@ -118,8 +118,6 @@ if (frontOfficeBean.isApercu()) {
 %>
 <header>
 	<div id="bandeau2">
-			        <script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&ELEMENT=recherche&RUBRIQUE=ENS"></script>
- <script type="text/javascript"  style="display:none">
 	
 			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/banniere.jsp\" %>" />
 		<div id="profils">
