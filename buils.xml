@@ -6,6 +6,7 @@
 	<property name="srcjsp" location="ksup/jsp"/>
 	<property name="srcconf" location="ksup/properties"/>
 	<property name="srcrsc" location="ksup/resources"/>
+	<property name="srcext" location="ksup/extensions"/>
 	<property name="app" location="/apps/ksup"/>
 	<property name="tomcat_home" location="/apps/tomcat"/>
 	<property name="tomcat_bin" location="${tomcat_home}/bin"/>
@@ -22,7 +23,10 @@
 	 </copy>
 	 <copy todir="${app}" overwrite="true">
 	  	<fileset dir="${srcrsc}"/>
-		  </copy>
+	</copy>
+	 <copy todir="${app}/extensions" overwrite="true">
+	   <fileset dir="${srcext}"/>
+	 </copy>
 	</target>
   
 	<target name="tomcatrestart" depends="tomcatstop,tomcatstart">
