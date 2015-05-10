@@ -14,9 +14,13 @@
 		FicheUniv ficheUniv = frontOfficeBean.getFicheUniv();		
 		%><ul id="menu_secondaire"><%
 			for (Menu elementMenu : menuSecondaire) {
-				%><li <%= elementMenu.isMenuCourant() && !FrontUtil.hasActiveChild(elementMenu) ? "class=\"menu_secondaire-actif\"" : "" %>><%
+				%><li <%= elementMenu.isMenuCourant() ? "class=\"focus\"" : "class=\"menu_secondaire-actif\"" %>><%
 				if (StringUtils.isNotBlank(elementMenu.getUrl())) {
-					%><a href="<%= elementMenu.getUrl()%>" class="type_rubrique_<%= elementMenu.getType() %>"><%= elementMenu.getLibelle()%></a><%
+					if (elementMenu.isMenuCourant()) {
+						%><strong><a href="<%= elementMenu.getUrl()%>" class="type_rubrique_<%= elementMenu.getType() %>"><%= elementMenu.getLibelle()%></a></strong><%
+					} else {
+						%><a href="<%= elementMenu.getUrl()%>" class="type_rubrique_<%= elementMenu.getType() %>"><%= elementMenu.getLibelle()%></a><%
+					}
 				} else {
 					%><%= elementMenu.getLibelle() %><%
 				}
@@ -26,7 +30,11 @@
 						for (Menu elementSousMenu : elementMenu.getSousMenu()) {
 							%><li <%= elementSousMenu.isMenuCourant() ? "class=\"sousmenu_secondaire-actif\"" : "" %>><%
 							if (StringUtils.isNotBlank(elementSousMenu.getUrl())) {
-								%><a href="<%= elementSousMenu.getUrl()%>" class="type_rubrique_<%= elementSousMenu.getType() %>"><%= elementSousMenu.getLibelle()%></a><%
+								if (elementSousMenu.isMenuCourant()) {
+									%><strong><a href="<%= elementSousMenu.getUrl()%>" class="type_rubrique_<%= elementSousMenu.getType() %>"><%= elementSousMenu.getLibelle()%></a></strong><%
+								} else {
+									%><a href="<%= elementSousMenu.getUrl()%>" class="type_rubrique_<%= elementSousMenu.getType() %>"><%= elementSousMenu.getLibelle()%></a><%
+								}
 							} else {
 								%><%= elementSousMenu.getLibelle() %><%
 							}

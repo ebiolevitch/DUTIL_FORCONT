@@ -32,13 +32,9 @@ JSPIncludeHelper.includePluginFicheTemplates(out, getServletContext(), request, 
 				<div class="separateur"></div>
 			</main> <!-- #page -->
 			
-				
-			<footer id="pied_deco">
-				<div id="pied_page" role="contentinfo">
-					<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/menu_piedpage.jsp\"%>" />
-					<span id="haut_page"><span aria-hidden="true" class="icon icon-arrow-up"></span><a href="#body"><span class="icon-libelle"><%=MessageHelper.getCoreMessage("ST_HAUT_PAGE")%></span></a></span>
-				</div><!-- #pied_page -->
-			</footer> <!-- #pied_deco -->
+			
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&RUBRIQUE=PRES&ELEMENT=footer"></script>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
 			
 		<% final String urlFiche = UnivWebFmt.determinerUrlFiche(ContexteUtil.getContexteUniv(), ContexteUtil.getContexteUniv().getFicheCourante()); %>
 		<a class="url-fiche" href="<%= urlFiche %>"><%= urlFiche %></a>

@@ -17,6 +17,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" lang="<%=ctx.getLocale().getLanguage()%>" xml:lang="<%=ctx.getLocale().getLanguage()%>"> <!--<![endif]-->
 
 <head>
+		<meta name="keywords" content="formation,recherche,universite,university,france,nantes" />
+		<meta name="Date-Creation-yyyymmdd" content="20081212" />
+		<meta name="Date-Revision-yyyymmdd" content="20111214" />
+		<meta name="copyright" content="Copyright &copy; Universit&eacute; de Nantes" />
+		<meta name="reply-to" content="webmaster@univ-nantes.fr" />
+		<meta name="category" content="Internet" />
+		<meta name="robots" content="index, follow" />
+		<meta name="distribution" content="global" />
+		<meta name="identifier-url" content="http://www.univ-nantes.fr/" />
+		<meta name="resource-type" content="document" />
+		<meta name="expires" content="-1" />
+		<meta name="Generator" content="K-Sup" />
+		<meta name="Formatter" content="K-Sup" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.univ-nantes.fr/jsp/styles/defaut/scroll.css" title="defaut" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.univ-nantes.fr/jsp/styles/defaut/formulaires.css" title="defaut" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.univ-nantes.fr/jsp/styles/defaut/degrades.css" title="defaut" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.univ-nantes.fr/jsp/styles/defaut/social.css" title="defaut" />
+<!--			<link rel="stylesheet" type="text/css" media="screen" href="custom.css" title="defaut" /> -->
+
 <%@ include file="./metatags.jsp" %>
 
 <link rel="stylesheet" type="text/css" media="screen" href="<%= URLResolver.getAbsoluteUrl(frontOfficeBean.getJspFo() + "/styles/fonts/icones/IcoMoon.css",ctx) %>" />
@@ -42,35 +61,33 @@
 
 <resources:link media="screen" group="styles"/>
 
-<script type="text/javascript">
-	var html = document.getElementsByTagName('html')[0];
-	html.className = html.className.replace('no-js', 'js');
-	// document.getElementsByTagName("html")[0].className = document.getElementsByTagName("html")[0].className.replace("no-js", "js");	
-</script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/swfobject.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/adminsite/toolbox/toolbox.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/carrousel.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/scroll.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/adminsite/utils/prototype.js"></script>
+		<!--<script type="text/javascript" src="<? echo $baseurl; ?>/kosmos/agenda/js/scriptaculous/scriptaculous.js"></script>-->
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/effects.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/kosmos/agenda/js/getElementsByClassName.js"></script>
+		<link rel="start" title="Accueil" href="http://www.univ-nantes.fr/" />
+		<link rel="alternate" type="application/rss+xml" title="Fil RSS des dix derni&egrave;res actualit&eacute;s" href="http://www.univ-nantes.fr/rss" />
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/fonctions.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/lytebox/lytebox.js"></script>   
+		<link rel="stylesheet" href="http://www.univ-nantes.fr/jsp/scripts/lytebox/lytebox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/defaut.js"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/scripts/menu.js"></script>
 
-<resources:link media="screen" group="jQueryCSS"/>
-
-<meta name="viewport" content="width=device-width" />
-
-<resources:script group="scripts"/>
-<script type="text/javascript" src="<%= URLResolver.getAbsoluteUrl("/adminsite/fcktoolbox/fckeditor/fckeditor.js",ctx) %>"></script><%
-if (frontOfficeBean.isDsi() || frontOfficeBean.isSaisieFront()) {
-	%><resources:link media="screen" group="styles-dsi"/><%
-}
-%><resources:link media="print" group="styles-print"/>
-<%@ include file="./styles_dynamiques.jsp" %><% 
-/* Connecteur : fichiers javascript et css de l'application externe */
-String specificInclude = (String) ctx.getDonneesSpecifiques().get("INCLUDE_HEAD");
-if (StringUtils.isNotBlank(specificInclude)) {
-	%><%= specificInclude %><%
-}
-
-	/* Quelques liens de navigation standards, utilisÃ©s en particulier dans Mozilla/FireFox/... */ %>
-   <link rel="start" title="Accueil" href="<%=URLResolver.getAbsoluteUrl("/", ctx)%>" />
-
-    <% /* Flux RSS de K-Portal : les 10 derniÃ¨res actualitÃ©s du site courant */%>
-    <link rel="alternate" type="application/rss+xml" title="<%=MessageHelper.getCoreMessage("ST_DIX_DERNIERES_ACTUALITES")%>" href="<%=URLResolver.getAbsoluteUrl("/adminsite/webservices/export_rss.jsp?NOMBRE=10&amp;CODE_RUBRIQUE=" + ctx.getInfosSite().getCodeRubrique() + "&amp;LANGUE=" + ctx.getLangue(), ctx)%>" />
-</head>
+		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+                <script type="text/javascript">
+                        addthis_pub             = 'UnivNantes';
+                        addthis_logo_background = '020a23';
+                        addthis_logo_color      = '020a23';
+                        addthis_language        = 'fr';
+                        var addthis_localize = {
+                                share_caption: "Partager"
+                        };
+                </script>
+ </head>
 <% 
 /* On est ici en mesure de savoir s'il y a des encadrÃ©s ou pas, et une zone de navigation ou pas :
 on dÃ©cide donc de la classe qui s'applique sur le centre de la page, qui gÃ¨re la largeur de la zone centrale */
@@ -118,10 +135,13 @@ if (frontOfficeBean.isApercu()) {
 %>
 <header>
 	<div id="bandeau2">
-			        <script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&ELEMENT=recherche&RUBRIQUE=ENS"></script>
- <script type="text/javascript"  style="display:none">
-	
-			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/banniere.jsp\" %>" />
+			<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&RUBRIQUE=ENS&ELEMENT=accespratiques"></script>
+		<script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&RUBRIQUE=ENS&ELEMENT=langue">
+		</script>			
+			<jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/banniere.jsp\"%>" />
+
+		        <script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&ELEMENT=recherche&RUBRIQUE=ENS"></script>
+
 		<div id="profils">
 		<strong>Accès par profil&nbsp;: </strong>
 		<ul>
