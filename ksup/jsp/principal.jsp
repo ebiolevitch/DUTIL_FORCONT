@@ -13,4 +13,5 @@ titre = FrontUtil.getTitrePageCourante(infoBean);
 
 <jsp:include page="<%=infoBean.getEcranPhysique()%>" />
 
+
 <%@ include file="./template/footer.jsp" %>
