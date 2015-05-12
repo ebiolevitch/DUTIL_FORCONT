@@ -156,15 +156,15 @@ ol {
   padding: 0 0 0 1.5em;
   margin: 0 0 1.5em;
 }
-
+ /*
 ul {
-  list-style: disc outside url("img/puce.svg");
+  list-style: disc outside url("img/puce.svg"); 
   overflow: hidden;
 }
 ul ul {
   list-style-image: url("img/puce2.svg");
 }
-
+*/
 ol {
   list-style: decimal;
   overflow: hidden;
@@ -2097,10 +2097,11 @@ footer .plan-site__2 > * > .plan-site__rubrique {
 #pied_page {
   padding-top: 0;
 }
-#pied_page > div {
+/*#pied_page > div {
   background: #efe9e5;
   padding: 1em;
 }
+
 @media screen and (min-width: 42.66667em) {
   #pied_page > div > div {
     display: inline-block;
@@ -2109,7 +2110,7 @@ footer .plan-site__2 > * > .plan-site__rubrique {
     padding: 0;
   }
 }
-
+*/
 @media screen and (min-width: 42.66667em) {
   .cartouche > div {
     margin: 0 auto;
