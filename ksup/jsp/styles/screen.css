@@ -108,8 +108,12 @@ h6, .h6 {
 
 h1,
 .h1 {
-  font: 700 1.94444em/1.2 "Open Sans", Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif, Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
-  margin: 0 0 .5em;
+  font: "Trebuchet MS";
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 2;
+  margin: 0 0 10 0;
+  color : #008A9F
 }
 
 h2,
@@ -1684,22 +1688,25 @@ form label.checkbox {
   width: auto;
 }
 form.formulaire_redacteur {
-  background-color: #eee;
+  background-color: #fff;
   margin: 0 0 1.5em;
   overflow: auto;
   padding: 1em;
+  width: auto;
 }
 form.formulaire_redacteur p.obligatoire label {
-  color: red;
+  color: black;
+  font-weight: unset;
 }
+
 form.formulaire_redacteur p.obligatoire input,
 form.formulaire_redacteur p.obligatoire textarea,
 form.formulaire_redacteur p.obligatoire select {
-  border-color: #ff4500;
+  border: 2px solid #b5b5b5;
 }
 form.formulaire_redacteur span.historyBack {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: unset;
 }
 form.disposition2 span.captcha {
   display: block;
@@ -1715,8 +1722,8 @@ form.disposition2 span.captcha {
 form.disposition1 label,
 form.disposition1 .label {
   display: block;
-  margin: 0 0 0.5em;
-  font-weight: 700;
+  margin: 0.5em 0 0.5em;
+  font-weight: unset;
 }
 
 form.disposition2 label,

@@ -551,6 +551,8 @@ encadres de fiche, de navigation rubrique, automatique de fiche
 .encadre_recherche_avancee {
 margin-bottom: 1em;
 overflow: hidden;
+
+
 }
 
 .encadre_generique_contenu,
@@ -777,7 +779,7 @@ font-family: "Trebuchet MS";
 font-style: normal;
 font-variant: normal;
 font-weight: 700;
-font-size: 2em;
+font-size: 200%;
 line-height: 1.2;
 font-size-adjust: none;
 font-stretch: normal;
@@ -1315,3 +1317,4 @@ html.newsletter {
     background-color: transparent !important;
 }
 
+/* formulaire*/
