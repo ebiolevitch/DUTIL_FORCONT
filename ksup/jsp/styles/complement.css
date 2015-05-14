@@ -520,7 +520,8 @@ width: 250px;
 
 #encadres h3,
 .encadre_deco,
-.encadre_recherche h2{
+.encadre_recherche h2,
+.encadre_auto_fiche h2 {
 background: #666;
 color: #fff;
 font: 500 1.0833em "Trebuchet MS";
@@ -552,14 +553,13 @@ encadres de fiche, de navigation rubrique, automatique de fiche
 .encadre_recherche_avancee {
 margin-bottom: 1em;
 overflow: hidden;
-
-
 }
 
 .encadre_generique_contenu,
 .encadre_rubrique_contenu,
 .encadre_fiche_contenu,
 .encadre_auto_fiche_contenu,
+.encadre_auto_fiche .encadre_contenu,
 .encadre_nav_auto_contenu,
 .encadre_recherche form,
 .encadre_recherche_avancee_contenu{
@@ -704,6 +704,7 @@ color: #008a9f;
 .style4 h3,
 .style4 .sans_titre,
 #encadres h3,
+.encadre_auto_fiche h2,
 .encadre_deco,
 .encadre_recherche h2,
 input[type="submit"],
@@ -1395,3 +1396,8 @@ fieldset,
   margin: 0 0 1.5em;
   padding: 1em;
 }
+
+[class^="colonne"] {
+    float: left;
+    width: 100%;
+  }
