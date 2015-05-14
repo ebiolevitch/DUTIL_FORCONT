@@ -14,5 +14,10 @@
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/T%C3%A9l%C3%A9chargements/pack-fc-v0.1/build.xml</locationURI>
 		</link>
+		<link>
+			<name>ksup/jsp/styles/titres.css</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/apps/ksup/jsp/styles/titres.css</locationURI>
+		</link>
 	</linkedResources>
 </projectDescription>
