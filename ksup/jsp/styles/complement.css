@@ -782,7 +782,7 @@ font-family: "Trebuchet MS";
 font-style: normal;
 font-variant: normal;
 font-weight: 700;
-/*font-size: 200%;*/
+font-size: small;
 line-height: 1.2;
 font-size-adjust: none;
 font-stretch: normal;
@@ -1338,3 +1338,39 @@ ul.objets, ul#liste_resultats {
     width: 50%;
     margin-bottom: 1em;
   }
+  
+.informations-generales {
+    background: none repeat scroll 0% 0% #fff;
+    margin: 0px 0px 1.5em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.onglets__item {
+  background: #fff;
+  border-bottom: 0;
+  border: 2px solid #ddd;
+  bottom: -2px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 .2em 0 0;
+  position: relative;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.onglets__item--actif {
+  background: #AB017A;
+  border-bottom-color: #fff;
+}
+
+.onglets a {
+  display: inline-block;
+  padding: .5em;
+  text-decoration: none;
+  color : grey;
+}
+
+.onglets #actif a {
+  background: #fff;
+  color: #FFF;
+}
