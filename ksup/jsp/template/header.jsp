@@ -129,21 +129,21 @@ if (metatag!=null && !metatag.getMetaNbHits().equals(new Long(0))){%>
 <jsp:include page="<%= frontOfficeBean.getJspFo() + \"/template/banniere.jsp\"%>" />
 <script type="text/javascript" src="http://www.univ-nantes.fr/jsp/template/elements_externes.jsp?LANGUE=0&ELEMENT=recherche&RUBRIQUE=ENS"></script>
 <div id="profils">
-<strong>Accès par profil&nbsp;: </strong>
+<strong>AccÃ¨s par profil&nbsp;: </strong>
 <ul>
 <li><a href="http://www.univ-nantes.fr/05905336/0/fiche___pagelibre/">Entreprise</a></li>
-<li><a href="http://www.univ-nantes.fr/59193101/0/fiche___pagelibre/">Lycéen</a></li>
-<li><a href="http://www.univ-nantes.fr/45032473/0/fiche___pagelibre/">Etudiant étranger</a></li>
-<li><a href="http://www.univ-nantes.fr/1325759101442/0/fiche___pagelibre/">En reprise d'étude</a></li>
-<li><a href="http://www.univ-nantes.fr/55885317/0/fiche___pagelibre/">Ancien étudiant</a></li>
+<li><a href="http://www.univ-nantes.fr/59193101/0/fiche___pagelibre/">LycÃ©en</a></li>
+<li><a href="http://www.univ-nantes.fr/45032473/0/fiche___pagelibre/">Etudiant Ã©tranger</a></li>
+<li><a href="http://www.univ-nantes.fr/1325759101442/0/fiche___pagelibre/">En reprise d'Ã©tude</a></li>
+<li><a href="http://www.univ-nantes.fr/55885317/0/fiche___pagelibre/">Ancien Ã©tudiant</a></li>
 </ul></div>
 </div> <!-- #bandeau2 -->
 <div id="menu" role="navigation">
-Polytech Nantes, École d'ingénieurs
+Polytech Nantes, Ã‰cole d'ingÃ©nieurs
 </div>
 <!-- #menu-->
 <!-- <div id="menu" role="navigation" class="plier-deplier__contenu plier-deplier__contenu--relatif plier-deplier__contenu--clos" aria-expanded="false"> -->
-<!-- ici est présent l'inclusion de la jsp menu_simple -->
+<!-- ici est prï¿½sent l'inclusion de la jsp menu_simple -->
 <!-- <div class="separateur"></div> -->
 <!-- </div> <!-- #menu -->
 </header>
