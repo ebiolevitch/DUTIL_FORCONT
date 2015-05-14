@@ -23,10 +23,6 @@ font, ins, kbd, q, s, samp, small, strike,
   position: relative;
 }
 
-p {
-  margin: 0 0 1em;
-}
-
 
 html {
     
@@ -523,7 +519,8 @@ width: 250px;
 }
 
 #encadres h3,
-.encadre_deco{
+.encadre_deco,
+.encadre_recherche h2{
 background: #666;
 color: #fff;
 font: 500 1.0833em "Trebuchet MS";
@@ -708,6 +705,7 @@ color: #008a9f;
 .style4 .sans_titre,
 #encadres h3,
 .encadre_deco,
+.encadre_recherche h2,
 input[type="submit"],
 img[alt="calendrier"],
 #recherche_avancee_deco h3,
@@ -784,15 +782,13 @@ font-family: "Trebuchet MS";
 font-style: normal;
 font-variant: normal;
 font-weight: 700;
-font-size: 200%;
+/*font-size: 200%;*/
 line-height: 1.2;
 font-size-adjust: none;
 font-stretch: normal;
 -x-system-font: none;
 -moz-font-feature-settings: normal;
 -moz-font-language-override: normal;
-margin-bottom: 10px;
-
 }
 
 
@@ -809,6 +805,7 @@ background: -o-linear-gradient(top, #00acb6 0%,#008a9f 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #00acb6 0%,#008a9f 100%); /* IE10+ */
 background: linear-gradient(top, #00acb6 0%,#008a9f 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acb6', endColorstr='#008a9f',GradientType=0 ); /* IE6-8 */
+
 color: #fff;
 }
 body.multisites #menu{
@@ -1323,4 +1320,21 @@ html.newsletter {
     background-color: transparent !important;
 }
 
-/* formulaire*/
+p {
+  margin: 0 0 1.5em;
+}
+
+ul.objets, ul#liste_resultats {
+  list-style: none;
+  margin: 0 0 3em;
+  padding: 0;
+}
+
+@media screen and (min-width: 42.66667em) {
+  .colonne__pas2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 1em;
+  }
