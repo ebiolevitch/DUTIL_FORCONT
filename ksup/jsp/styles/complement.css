@@ -23,6 +23,10 @@ font, ins, kbd, q, s, samp, small, strike,
   position: relative;
 }
 
+p {
+  margin: 0 0 1em;
+}
+
 
 html {
     
@@ -805,7 +809,6 @@ background: -o-linear-gradient(top, #00acb6 0%,#008a9f 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #00acb6 0%,#008a9f 100%); /* IE10+ */
 background: linear-gradient(top, #00acb6 0%,#008a9f 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acb6', endColorstr='#008a9f',GradientType=0 ); /* IE6-8 */
-
 color: #fff;
 }
 body.multisites #menu{
