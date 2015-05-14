@@ -711,6 +711,7 @@ body.formation ul.onglets li a:hover,
 body.formation ul.onglets li.on a{
 background-color: #ab017a;
 color: #fff;
+margin-top: 1em;
 }
 
 .pliage .ouvert,

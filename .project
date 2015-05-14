@@ -8,4 +8,11 @@
 	</buildSpec>
 	<natures>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>build.xml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/T%C3%A9l%C3%A9chargements/pack-fc-v0.1/build.xml</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
