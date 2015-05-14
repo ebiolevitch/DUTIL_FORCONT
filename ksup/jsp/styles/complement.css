@@ -1358,7 +1358,19 @@ ul.objets, ul#liste_resultats {
   border-radius: 0px 10px 0px 0px;
 }
 
-.onglets__item--actif {
+.onglets__item #actif{
+  background: #aaa;
+  border-bottom: 0;
+  border: 2px solid #ddd;
+  bottom: -2px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 .2em 0 0;
+  position: relative;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.onglets__item .onglets__item--actif {
   background: #AB017A;
   border-bottom-color: #fff;
 }
@@ -1368,9 +1380,18 @@ ul.objets, ul#liste_resultats {
   padding: .5em;
   text-decoration: none;
   color : grey;
+  font-weight: 100;
 }
 
-.onglets #actif a {
-  background: #fff;
+.onglets__item .onglets__item--actif #actif a {
+  /*background: #fff;*/
   color: #FFF;
+}
+
+fieldset,
+.fieldset {
+  background: #fff;
+  /*border: 2px solid #ededed;*/
+  margin: 0 0 1.5em;
+  padding: 1em;
 }
