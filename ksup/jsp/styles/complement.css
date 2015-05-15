@@ -1401,3 +1401,15 @@ fieldset,
     float: left;
     width: 100%;
   }
+  
+.fiche .surtitre {
+  border-bottom: 0px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.defaultstructureksup__activite h2 {
+	margin-top: 10px;
+	font: 700 1.55556em/1 "Open Sans",Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif,Arial,"Helvetica Neue",Helvetica,"Bitstream Vera Sans",sans-serif;
+}
