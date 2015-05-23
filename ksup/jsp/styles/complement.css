@@ -1322,7 +1322,7 @@ html.newsletter {
 }
 
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 0.5em;
 }
 
 ul.objets, ul#liste_resultats {
@@ -1412,4 +1412,36 @@ fieldset,
 .defaultstructureksup__activite h2 {
 	margin-top: 10px;
 	font: 700 1.55556em/1 "Open Sans",Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif,Arial,"Helvetica Neue",Helvetica,"Bitstream Vera Sans",sans-serif;
+}
+
+select,
+textarea,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="password"],
+input[type="text"],
+input[type="email"],
+input[readonly],
+button,
+.button,
+.js .plier-deplier__bouton {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*border: 2px solid #b5b5b5;*/
+  /*font: 500 1em Cambria, georgia, times, "times new roman", serif;*/
+  padding: 0em 0em 0em 0.25em;
+  text-decoration: none;
+}
+
+h1,
+.h1 {
+  font: "Trebuchet MS";
+  font-weight: 700;
+  font-size: 2.2em;
+  line-height: 1.2;
+  margin: 0 0 10 0;
+  color : #008A9F;
+  width: 110%;
 }
