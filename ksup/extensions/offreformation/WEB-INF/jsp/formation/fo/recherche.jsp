@@ -34,34 +34,25 @@
  	Objetpartage module = ReferentielObjets.getObjetByNom("formation");
  	%>
 	<p>
-		<label for="NIVEAU_RECRUTEMENT"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_NIVEAU_ENTREE")%></label>
-		<%fmt.insererCombo(out, infoBean, "NIVEAU_RECRUTEMENT", fmt.SAISIE_FACULTATIF, module.getIdExtension(), "niveau_recrutement", "Niveau_recrutement");%>
+		<label for="LIBELLE"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_INTITULE")%></label>
+		<%fmt.insererChampSaisie(out, infoBean, "LIBELLE", fmt.SAISIE_FACULTATIF , fmt.FORMAT_TEXTE, 0, 20);%>
 	</p>
-	
 	<p>
 		<label for="TYPE_FORMATION"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_TYPE_FORMATION")%></label>
 		<%fmt.insererComboHashtable(out, infoBean, "TYPE_FORMATION", fmt.SAISIE_FACULTATIF , "LISTE_TYPE_FORMATIONS","");%>
 	</p>
-	
-	<p>
-		<label for="DOMAINE_FORMATION_ETABLISSEMENT"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_DOMAINE_FORMATION_ETABLISSEMENT")%></label>
-		<%fmt.insererComboHashtable(out, infoBean, "DOMAINE_FORMATION_ETABLISSEMENT", fmt.SAISIE_FACULTATIF , "LISTE_DOMAINE_FORMATION_ETABLISSEMENTS");%>
-	</p>
-	
-	<p>
-		<label for="DISCIPLINE"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_DISCIPLINE")%></label>
-		<%fmt.insererComboHashtable(out, infoBean, "DISCIPLINE", fmt.SAISIE_FACULTATIF , "LISTE_DISCIPLINES");%>
-	</p>
- 	
-	<p>
-		<label for="LIBELLE"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_INTITULE")%></label>
-		<%fmt.insererChampSaisie(out, infoBean, "LIBELLE", fmt.SAISIE_FACULTATIF , fmt.FORMAT_TEXTE, 0, 20);%>
-	</p>
-	
 	<p>
 		<label for="VILLE"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_VILLE")%></label>
 		<%fmt.insererComboHashtable(out, infoBean, "VILLE", fmt.SAISIE_FACULTATIF , "LISTE_VILLES");%>
 	</p>
+	<p>
+		<label for="NIVEAU_RECRUTEMENT"><%=module.getMessage("ST_RECHERCHE_FICHE_FORMATION_NIVEAU_ENTREE")%></label>
+		<%fmt.insererCombo(out, infoBean, "NIVEAU_RECRUTEMENT", fmt.SAISIE_FACULTATIF, module.getIdExtension(), "niveau_recrutement", "Niveau_recrutement");%>
+	</p>
+ 	
+	
+	
+
 	
 	<fieldset>
 		<legend><%= module.getMessage("ST_RECHERCHE_FICHE_FORMATION_MODALITE_ENSEIGNEMENT") %></legend>
