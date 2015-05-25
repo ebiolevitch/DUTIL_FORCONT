@@ -16,9 +16,11 @@
 
 body {
   background-color: #eee;
-  color: #000;
+/*  color: #000;*/
+  color:#008A9F;
   font-family: Cambria, georgia, times, "times new roman", serif;
-  font-size: 1.125em;
+  /*font-size: 1.125em;*/
+  font-size: 1em;
   font-weight: 500;
   line-height: 1.5em;
   margin: 0;
@@ -98,6 +100,11 @@ caption {
   background: #000;
 }
 
+#bandeau {
+	background-image: url('../../jsp/styles/img/body_multisites.jpg');
+	text-align : left;
+}
+
 #contenu {
   background-color: #fff;
   width: 780px;
@@ -113,10 +120,12 @@ caption {
 #numero-date {
   text-align: right;
   margin: 0;
-  background: #333;
+  /*background: #333;*/
+  background: -moz-linear-gradient(center top , #00ACB6 0%, #008A9F 100%) repeat scroll 0% 0% transparent;
   color: #fff;
   font-family: verdana, arial, sans-serif;
-  font-size: .72222em;
+/*  font-size: .72222em;*/
+  font-size: 0.85;
 }
 #numero-date p {
   margin: 0 auto;
@@ -201,4 +210,12 @@ caption {
 
 .liste-fiche--resume {
   margin: 0;
+}
+
+a img, a:link img, a:visited img {
+    border: medium none;
+    vertical-align: middle;
+    padding: 0.5em 2em;
+    BACKGROUND: white;
+    width: 10%;
 }

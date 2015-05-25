@@ -310,7 +310,7 @@ button,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 2px solid #b5b5b5;
+  /*border: 2px solid #b5b5b5;*/
   /*font: 500 1em Cambria, georgia, times, "times new roman", serif;*/
   padding: .25em;
   text-decoration: none;
