@@ -1349,44 +1349,60 @@ ul.objets, ul#liste_resultats {
 
 .onglets__item {
   background: #fff;
-  border-bottom: 0;
-  border: 2px solid #ddd;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid solid none solid;
+  border-color: #ddd;
   bottom: -2px;
   display: inline-block;
   font-weight: 700;
-  margin: 0 .2em 0 0;
+  margin: 0;
   position: relative;
-  border-radius: 0px 10px 0px 0px;
+  border-radius: 0px 7px 0px 0px;
+  border-bottom: 0px;
 }
 
-.onglets__item #actif{
+
+.onglets__item #actif {
   background: #aaa;
   border-bottom: 0;
-  border: 2px solid #ddd;
   bottom: -2px;
   display: inline-block;
   font-weight: 700;
-  margin: 0 .2em 0 0;
   position: relative;
-  border-radius: 0px 10px 0px 0px;
-}
-
-.onglets__item .onglets__item--actif {
-  background: #AB017A;
-  border-bottom-color: #fff;
+  border-radius: 0px 7px 0px 0px;
 }
 
 .onglets a {
   display: inline-block;
   padding: .5em;
   text-decoration: none;
-  color : grey;
-  font-weight: 100;
+  color : #666;
+  font-weight: 700;
 }
 
-.onglets__item .onglets__item--actif #actif a {
-  /*background: #fff;*/
-  color: #FFF;
+.onglets__item--actif a {
+  color: white;
+  background-color: none repeat scroll 0% 0% #AB017A;
+  border-radius: 0px 7px 0px 0px;
+}
+
+ul.onglets {
+	margin: 0;
+}
+
+.onglets-section.onglets-section--actif {
+    border: 1px solid #DDD;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+
+li.onglets__item {
+  background-image: none ;
+  padding-left: 1em;
+}
+
+li.onglets__item--actif {
+  background: url('../../jsp/styles/img/puce1.png') no-repeat scroll 0px 0.25em #AB017A;
 }
 
 fieldset,
@@ -1445,3 +1461,4 @@ h1,
   color : #008A9F;
   width: 110%;
 }
+
