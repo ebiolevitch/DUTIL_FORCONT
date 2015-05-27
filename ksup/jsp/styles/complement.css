@@ -107,7 +107,6 @@ body.multisites #menu {
 }
 
 #menu {
-
     color: #FFF;
 /*    border-bottom: 1px solid #EEE; */
     font: 700 2em/37px arial;
@@ -121,9 +120,7 @@ body.multisites #menu {
     min-height: 37px;
     margin: 0px auto;
     z-index: 100;
-
 }
-
 
 
 body {
@@ -714,7 +711,7 @@ body.formation ul.onglets li a:hover,
 body.formation ul.onglets li.on a{
 background-color: #ab017a;
 color: #fff;
-margin-top: 1em;
+/*margin-top: 1em;*/
 }
 
 .pliage .ouvert,
@@ -779,19 +776,28 @@ background-image: url(../../fc/jsp/styles/img/titre_ouvert.png);
  }
 
 #avec_nav_avec_encadres h2{
-font-family: "Trebuchet MS";
-font-style: normal;
-font-variant: normal;
-font-weight: 700;
-font-size: small;
-line-height: 1.2;
-font-size-adjust: none;
-font-stretch: normal;
--x-system-font: none;
--moz-font-feature-settings: normal;
--moz-font-language-override: normal;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	font-size: small;
+	line-height: 1.2;
+	font-size-adjust: none;
+	font-stretch: normal;
+	-x-system-font: none;
+	-moz-font-feature-settings: normal;
+	-moz-font-language-override: normal;
+	margin: 8px 0px 5px 0px;
 }
 
+#avec_nav_avec_encadres h1{
+	margin: 0px 0px 15px 0px;
+	font-weight: 700;
+	font-size: 1.8em;
+	line-height: 1.2;
+	color: #008A9F;
+	width: 100%;
+}
 
 #menu_principal strong a,
 #menu_principal strong a:hover,
@@ -1344,7 +1350,8 @@ ul.objets, ul#liste_resultats {
     background: none repeat scroll 0% 0% #fff;
     margin: 0px 0px 1.5em;
     overflow: hidden;
-    padding: 1em;
+    padding: 1em 0em 0em 1em;
+    border: 1px solid #ddd;
 }
 
 .onglets__item {
@@ -1352,7 +1359,7 @@ ul.objets, ul#liste_resultats {
   border-width: 1px 1px 0px 1px;
   border-style: solid solid none solid;
   border-color: #ddd;
-  bottom: -2px;
+  bottom: 0px;
   display: inline-block;
   font-weight: 700;
   margin: 0;
@@ -1380,6 +1387,10 @@ ul.objets, ul#liste_resultats {
   font-weight: 700;
 }
 
+.onglets {
+    border-bottom: none;
+}
+
 .onglets__item--actif a {
   color: white;
   background-color: none repeat scroll 0% 0% #AB017A;
@@ -1393,12 +1404,17 @@ ul.onglets {
 .onglets-section.onglets-section--actif {
     border: 1px solid #DDD;
     margin: 0px;
-    padding: 0px;
+    padding: 0em 0em 0em 1em;;
     display: block;
+}
 
 li.onglets__item {
   background-image: none ;
   padding-left: 1em;
+}
+
+li.onglets__item.onglets__item--actif {
+  background: url('../../jsp/styles/img/puce1.png') no-repeat scroll 0px 0.25em #AB017A;
 }
 
 li.onglets__item--actif {
@@ -1412,6 +1428,8 @@ fieldset,
   margin: 0 0 1.5em;
   padding: 1em;
 }
+
+
 
 [class^="colonne"] {
     float: left;
@@ -1450,15 +1468,18 @@ button,
   padding: 0em 0em 0em 0.25em;
   text-decoration: none;
 }
-
+/*
 h1,
 .h1 {
   font: "Trebuchet MS";
   font-weight: 700;
   font-size: 2.2em;
   line-height: 1.2;
-  margin: 0 0 10 0;
+  margin: 0 0 0.5em 0;
   color : #008A9F;
   width: 110%;
-}
+}*/
 
+h2.paragraphe__titre--1 {
+	margin: 2px 0 2px 0;
+}
