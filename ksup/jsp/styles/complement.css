@@ -535,7 +535,7 @@ border-radius: 0 10px 0 0;
 
 .encadre_generique,
 .encadre_rubrique {
-margin-bottom: 1em;
+/*margin-bottom: 1em;*/
 overflow: auto;
 }
 
@@ -549,6 +549,7 @@ encadres de fiche, de navigation rubrique, automatique de fiche
 .encadre_recherche,
 .encadre_recherche_avancee {
 margin-bottom: 1em;
+margin-top: 1em;
 overflow: hidden;
 }
 
