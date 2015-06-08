@@ -1478,8 +1478,17 @@ h1,
   margin: 0 0 0.5em 0;
   color : #008A9F;
   width: 110%;
-}*/
+
 
 h2.paragraphe__titre--1 {
 	margin: 2px 0 2px 0;
 }
+
+#bookmarks_texte {
+    border-bottom: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
+    margin: 0px 0px 1em;
+    min-height: 1.3333em;
+    padding: 0.5em 0px;
+    position: relative;
+}}*/
