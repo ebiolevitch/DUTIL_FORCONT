@@ -533,11 +533,11 @@ border-radius: 0 10px 0 0;
 
 /* === encadres generiques === */
 
-.encadre_generique,
+/*.encadre_generique,
 .encadre_rubrique {
-/*margin-bottom: 1em;*/
+margin-bottom: 1em;
 overflow: auto;
-}
+}*/
 
 /* ------------------------------------------------
 encadres de fiche, de navigation rubrique, automatique de fiche
@@ -547,9 +547,10 @@ encadres de fiche, de navigation rubrique, automatique de fiche
 .encadre_auto_fiche,
 .encadre_nav_auto,
 .encadre_recherche,
-.encadre_recherche_avancee {
+.encadre_recherche_avancee,
+.encadre_generique,
+.encadre_rubrique {
 margin-bottom: 1em;
-margin-top: 1em;
 overflow: hidden;
 }
 
